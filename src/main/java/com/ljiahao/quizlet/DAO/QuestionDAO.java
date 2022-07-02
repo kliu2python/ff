@@ -1,19 +1,19 @@
-package com.example.demo1.DAO;
+package com.ljiahao.quizlet.DAO;
 
 import java.util.List;
+
+import com.ljiahao.quizlet.model.Question;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo1.model.Question;
-
 @Repository
-public interface QuestionDAO extends JpaRepository<Question, Integer>{
-	
+public interface QuestionDAO extends JpaRepository<Question, Integer> {
+
 	@Query(value = "SELECT * FROM Question q WHERE q.id = ?1", nativeQuery = true)
 	public Question findById(int theId);
-	
+
 	@Query(value = "SELECT * FROM Question q WHERE q.quiz_id = ?1", nativeQuery = true)
 	public List<Question> getAllQuizs(int theType);
 }

@@ -1,4 +1,4 @@
-package com.example.demo1;
+package com.ljiahao.quizlet;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,13 +11,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories
 @EntityScan(basePackages = "com.example.demo1.model")
 public class Demo1Application extends SpringBootServletInitializer {
-	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder springApplicationBuilder)
-    {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder springApplicationBuilder) {
         return springApplicationBuilder.sources(Demo1Application.class);
     }
-	
+
     public static void main(String[] args) {
         SpringApplication.run(Demo1Application.class, args);
     }

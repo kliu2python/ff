@@ -1,4 +1,4 @@
-package com.example.demo1.model;
+package com.ljiahao.quizlet.model;
 
 public class User {
 
@@ -6,10 +6,11 @@ public class User {
     String username;
     String password;
 
-    public User(){
+    public User() {
 
     }
-    public User(String username, String password){
+
+    public User(String username, String password) {
         this.password = password;
         this.username = username;
     }

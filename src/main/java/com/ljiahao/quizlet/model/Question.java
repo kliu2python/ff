@@ -1,4 +1,4 @@
-package com.example.demo1.model;
+package com.ljiahao.quizlet.model;
 
 import java.io.Serializable;
 
@@ -10,26 +10,26 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="question_template")
+@Table(name = "question_template")
 public class Question implements Serializable {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
-	
-	@Column(name="quiz_id")
-	int quizId;
-	@Column(name = "option1")
+
+    @Column(name = "quiz_id")
+    int quizId;
+    @Column(name = "option1")
     String option1;
-	@Column(name = "option2")
+    @Column(name = "option2")
     String option2;
-	@Column(name = "option3")
+    @Column(name = "option3")
     String option3;
-	@Column(name = "option4")
+    @Column(name = "option4")
     String option4;
-	@Column(name = "question")
+    @Column(name = "question")
     String questionDesc;
-	@Column(name = "correct_option")
+    @Column(name = "correct_option")
     String correctAns;
 
     public int getId() {

@@ -1,5 +1,6 @@
-package com.example.demo1.DAO;
-import com.example.demo1.model.User;
+package com.ljiahao.quizlet.DAO;
+
+import com.ljiahao.quizlet.model.User;
 
 public interface UserDAO {
     public int registerUser(User user);

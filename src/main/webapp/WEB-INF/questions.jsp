@@ -46,7 +46,7 @@
 			</c:forEach>
 		</div>
 		<form action="result" method="get">
-			<button name="theId" type="submit">Submit
+			<button type="submit">Submit
 			</button>
 		</form>
 		<script>

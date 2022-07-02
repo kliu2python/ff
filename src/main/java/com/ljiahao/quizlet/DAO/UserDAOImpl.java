@@ -1,13 +1,13 @@
-package com.example.demo1.DAO;
+package com.ljiahao.quizlet.DAO;
 
-import com.example.demo1.model.User;
+import com.ljiahao.quizlet.model.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserDAOImpl implements UserDAO{
+public class UserDAOImpl implements UserDAO {
     private final JdbcTemplate jdbcTemplate;
 
     @Autowired
